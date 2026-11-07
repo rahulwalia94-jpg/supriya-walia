@@ -1,0 +1,337 @@
+{
+ "base": {
+  "balances_bn": 100.0,
+  "roll_c_30": 0.02,
+  "roll": [
+   0.35,
+   0.75,
+   0.85,
+   0.9,
+   0.92
+  ],
+  "recovery_rate": 0.1,
+  "months": 12
+ },
+ "results": {
+  "baseline": {
+   "assumptions": {
+    "c30_mult": 1.0,
+    "roll_mult": 1.0,
+    "outage_months": 0,
+    "remediation": 1.0,
+    "spill_mult": 1.0,
+    "spill_months": 0,
+    "fraud_loss_m": 0,
+    "ops_cost_m": 0,
+    "remediation_m": 0
+   },
+   "net_chargeoffs_12m_bn_technical": 3.834,
+   "net_chargeoffs_12m_bn_spillover": 3.834,
+   "incremental_credit_loss_m_technical": 0.0,
+   "incremental_credit_loss_m_spillover": 0.0,
+   "operational_risk_loss_m": 0,
+   "path_spillover": [
+    {
+     "month": 1,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 2,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 3,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 4,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 5,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 6,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 7,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 8,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 9,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 10,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 11,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 12,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    }
+   ]
+  },
+  "mild_24h": {
+   "assumptions": {
+    "c30_mult": 1.05,
+    "roll_mult": 1.02,
+    "outage_months": 1,
+    "remediation": 0.98,
+    "spill_mult": 1.01,
+    "spill_months": 2,
+    "fraud_loss_m": 5,
+    "ops_cost_m": 15,
+    "remediation_m": 10
+   },
+   "net_chargeoffs_12m_bn_technical": 3.841,
+   "net_chargeoffs_12m_bn_spillover": 3.848,
+   "incremental_credit_loss_m_technical": 6.4,
+   "incremental_credit_loss_m_spillover": 13.4,
+   "operational_risk_loss_m": 30,
+   "path_spillover": [
+    {
+     "month": 1,
+     "d30plus_bn": 3.916,
+     "gross_chargeoff_bn": 0.3621
+    },
+    {
+     "month": 2,
+     "d30plus_bn": 3.934,
+     "gross_chargeoff_bn": 0.3552
+    },
+    {
+     "month": 3,
+     "d30plus_bn": 3.94,
+     "gross_chargeoff_bn": 0.3552
+    },
+    {
+     "month": 4,
+     "d30plus_bn": 3.925,
+     "gross_chargeoff_bn": 0.3552
+    },
+    {
+     "month": 5,
+     "d30plus_bn": 3.923,
+     "gross_chargeoff_bn": 0.3552
+    },
+    {
+     "month": 6,
+     "d30plus_bn": 3.921,
+     "gross_chargeoff_bn": 0.3554
+    },
+    {
+     "month": 7,
+     "d30plus_bn": 3.917,
+     "gross_chargeoff_bn": 0.3586
+    },
+    {
+     "month": 8,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.3585
+    },
+    {
+     "month": 9,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.3549
+    },
+    {
+     "month": 10,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 11,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    },
+    {
+     "month": 12,
+     "d30plus_bn": 3.913,
+     "gross_chargeoff_bn": 0.355
+    }
+   ]
+  },
+  "adverse_7day": {
+   "assumptions": {
+    "c30_mult": 1.6,
+    "roll_mult": 1.2,
+    "outage_months": 1,
+    "remediation": 0.9,
+    "spill_mult": 1.05,
+    "spill_months": 6,
+    "fraud_loss_m": 50,
+    "ops_cost_m": 150,
+    "remediation_m": 100
+   },
+   "net_chargeoffs_12m_bn_technical": 3.862,
+   "net_chargeoffs_12m_bn_spillover": 3.996,
+   "incremental_credit_loss_m_technical": 27.8,
+   "incremental_credit_loss_m_spillover": 161.1,
+   "operational_risk_loss_m": 300,
+   "path_spillover": [
+    {
+     "month": 1,
+     "d30plus_bn": 4.064,
+     "gross_chargeoff_bn": 0.3859
+    },
+    {
+     "month": 2,
+     "d30plus_bn": 4.072,
+     "gross_chargeoff_bn": 0.359
+    },
+    {
+     "month": 3,
+     "d30plus_bn": 4.085,
+     "gross_chargeoff_bn": 0.3613
+    },
+    {
+     "month": 4,
+     "d30plus_bn": 4.096,
+     "gross_chargeoff_bn": 0.3621
+    },
+    {
+     "month": 5,
+     "d30plus_bn": 4.106,
+     "gross_chargeoff_bn": 0.3621
+    },
+    {
+     "month": 6,
+     "d30plus_bn": 4.101,
+     "gross_chargeoff_bn": 0.3763
+    },
+    {
+     "month": 7,
+     "d30plus_bn": 4.101,
+     "gross_chargeoff_bn": 0.3722
+    },
+    {
+     "month": 8,
+     "d30plus_bn": 4.005,
+     "gross_chargeoff_bn": 0.3722
+    },
+    {
+     "month": 9,
+     "d30plus_bn": 3.974,
+     "gross_chargeoff_bn": 0.3721
+    },
+    {
+     "month": 10,
+     "d30plus_bn": 3.95,
+     "gross_chargeoff_bn": 0.3721
+    },
+    {
+     "month": 11,
+     "d30plus_bn": 3.93,
+     "gross_chargeoff_bn": 0.372
+    },
+    {
+     "month": 12,
+     "d30plus_bn": 3.911,
+     "gross_chargeoff_bn": 0.3721
+    }
+   ]
+  },
+  "severe_vendor": {
+   "assumptions": {
+    "c30_mult": 3.0,
+    "roll_mult": 1.5,
+    "outage_months": 2,
+    "remediation": 0.75,
+    "spill_mult": 1.12,
+    "spill_months": 9,
+    "fraud_loss_m": 300,
+    "ops_cost_m": 500,
+    "remediation_m": 400
+   },
+   "net_chargeoffs_12m_bn_technical": 3.929,
+   "net_chargeoffs_12m_bn_spillover": 4.679,
+   "incremental_credit_loss_m_technical": 94.2,
+   "incremental_credit_loss_m_spillover": 844.5,
+   "operational_risk_loss_m": 1200,
+   "path_spillover": [
+    {
+     "month": 1,
+     "d30plus_bn": 8.38,
+     "gross_chargeoff_bn": 0.3859
+    },
+    {
+     "month": 2,
+     "d30plus_bn": 5.613,
+     "gross_chargeoff_bn": 0.4288
+    },
+    {
+     "month": 3,
+     "d30plus_bn": 5.022,
+     "gross_chargeoff_bn": 0.3823
+    },
+    {
+     "month": 4,
+     "d30plus_bn": 4.893,
+     "gross_chargeoff_bn": 0.4055
+    },
+    {
+     "month": 5,
+     "d30plus_bn": 4.782,
+     "gross_chargeoff_bn": 0.4438
+    },
+    {
+     "month": 6,
+     "d30plus_bn": 4.474,
+     "gross_chargeoff_bn": 0.6657
+    },
+    {
+     "month": 7,
+     "d30plus_bn": 4.345,
+     "gross_chargeoff_bn": 0.5202
+    },
+    {
+     "month": 8,
+     "d30plus_bn": 4.354,
+     "gross_chargeoff_bn": 0.3906
+    },
+    {
+     "month": 9,
+     "d30plus_bn": 4.358,
+     "gross_chargeoff_bn": 0.3931
+    },
+    {
+     "month": 10,
+     "d30plus_bn": 4.36,
+     "gross_chargeoff_bn": 0.3936
+    },
+    {
+     "month": 11,
+     "d30plus_bn": 4.362,
+     "gross_chargeoff_bn": 0.394
+    },
+    {
+     "month": 12,
+     "d30plus_bn": 4.133,
+     "gross_chargeoff_bn": 0.3953
+    }
+   ]
+  }
+ }
+}

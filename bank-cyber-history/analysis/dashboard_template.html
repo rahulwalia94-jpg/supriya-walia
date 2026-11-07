@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyberattacks on Banks 1994–2026 — Incident Explorer</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2430;--mut:#646b78;--line:#dcd8cf;--acc:#2a6f97;--warn:#b5523b;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#16181d;--fg:#e8e6e1;--mut:#9aa1ad;--line:#333842;--acc:#7fb6d9;--warn:#e59a85;--card:#1e2128}}
+*{box-sizing:border-box}body{margin:0;font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--fg)}
+header{padding:20px 24px;border-bottom:1px solid var(--line)}h1{margin:0;font-size:20px}header p{margin:4px 0 0;color:var(--mut);max-width:900px}
+.wrap{display:grid;grid-template-columns:360px 1fr;min-height:calc(100vh - 90px)}
+aside{border-right:1px solid var(--line);padding:14px;overflow:auto;max-height:calc(100vh - 90px)}
+main{padding:18px 24px;overflow:auto;max-height:calc(100vh - 90px)}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+select,input{width:100%;padding:6px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:inherit}
+input{grid-column:1/3}
+.stats{color:var(--mut);font-size:12px;margin:6px 0}
+.tl{display:flex;gap:2px;align-items:flex-end;height:46px;margin:8px 0 12px}
+.tl div{flex:1;background:var(--acc);opacity:.75;cursor:pointer;min-height:2px;border-radius:2px 2px 0 0}
+.tl div:hover{opacity:1}
+.item{padding:8px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;background:var(--card)}
+.item:hover,.item.sel{border-color:var(--acc)}
+.item b{display:block;font-size:13px}.item small{color:var(--mut)}
+.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:10px;border:1px solid var(--line);margin-right:4px;color:var(--mut)}
+.tag.nc{color:var(--warn);border-color:var(--warn)}
+h2{margin:0 0 4px;font-size:19px}
+table{border-collapse:collapse;width:100%;margin-top:10px}td{border-top:1px solid var(--line);padding:6px 8px;vertical-align:top}
+td:first-child{width:200px;color:var(--mut);font-size:12px}
+a{color:var(--acc)}.note{color:var(--mut);font-size:12px;margin-top:16px}
+@media(max-width:800px){.wrap{grid-template-columns:1fr}aside,main{max-height:none}}
+</style>
+</head>
+<body>
+<header>
+<h1>Cyberattacks on Banks and Financial Infrastructure, 1994 – 7 Nov 2026</h1>
+<p>A curated, evidence-graded sample of incidents. It is <b>not</b> a population estimate: counts reflect what was selected and documented, not true incidence. Two non-malicious outages are included as comparators and flagged in red.</p>
+</header>
+<div class="wrap">
+<aside>
+ <div class="filters">
+  <select id="fRegion"><option value="">All regions</option></select>
+  <select id="fFamily"><option value="">All attack families</option></select>
+  <select id="fStatus"><option value="">All evidence statuses</option></select>
+  <select id="fState"><option value="">Any state linkage</option></select>
+  <input id="q" placeholder="Search name, organisation, attacker…">
+ </div>
+ <div class="stats" id="stats"></div>
+ <div class="tl" id="tl" title="Incidents per year (click to filter)"></div>
+ <div id="list"></div>
+</aside>
+<main id="detail"><p>Pick an incident to see its full record.</p></main>
+</div>
+<script>
+const DATA = /*__DATA__*/[];
+const $ = id => document.getElementById(id);
+let yearFilter = null, selected = null;
+function fill(id, key){ [...new Set(DATA.map(d=>d[key]))].sort().forEach(v=>{const o=document.createElement('option');o.value=o.textContent=v;$(id).appendChild(o)}) }
+fill('fRegion','region'); fill('fFamily','family'); fill('fStatus','status'); fill('fState','state_link');
+const LABELS = {start:'Start',end:'End',detection:'Detected',disclosure:'Disclosed',country:'Country',org:'Organisation',org_type:'Classification',
+ attacker:'Attacker',attribution:'Attribution confidence',motive:'Motive',category:'Attack category',vector:'Initial compromise vector',sequence:'Attacker activity (high level)',
+ systems:'Compromised systems',process:'Financial process affected',stolen_orig:'Loss (original currency, as reported)',stolen_usd_m:'Loss, USD m (approx.)',
+ attempted_orig:'Attempted',recovered_usd_m:'Recovered, USD m',downtime:'Operational downtime',customers:'Customers affected',settlement:'Payment / settlement effects',
+ regulatory:'Regulatory response',fs_impact:'Financial-statement impact',legal:'Legal / enforcement',root_causes:'Root causes',failed:'Controls that failed',
+ worked:'Controls that worked',lessons:'Lessons',unresolved:'Unresolved questions',status:'Status',evidence:'Evidence score (1–5)',state_link:'State linkage',verification:'Verification'};
+function filtered(){
+ const q=$('q').value.toLowerCase();
+ return DATA.filter(d=>(!$('fRegion').value||d.region===$('fRegion').value)&&(!$('fFamily').value||d.family===$('fFamily').value)
+  &&(!$('fStatus').value||d.status===$('fStatus').value)&&(!$('fState').value||d.state_link===$('fState').value)
+  &&(yearFilter===null||d.year===yearFilter)&&(!q||(d.name+d.org+d.attacker+d.country).toLowerCase().includes(q)));
+}
+function render(){
+ const rows=filtered();
+ const known=rows.reduce((s,d)=>s+(d.stolen_usd_m||0),0);
+ $('stats').textContent=`${rows.length} of ${DATA.length} incidents · disclosed direct losses in view ≈ USD ${known.toLocaleString(undefined,{maximumFractionDigits:0})}m (sum of disclosed figures only)`+(yearFilter?` · year ${yearFilter} (click the bar again to clear)`:'');
+ const ys={};DATA.forEach(d=>ys[d.year]=(ys[d.year]||0)+1);const mn=1994,mx=2026,max=Math.max(...Object.values(ys));
+ $('tl').innerHTML='';for(let y=mn;y<=mx;y++){const b=document.createElement('div');b.style.height=((ys[y]||0)/max*100)+'%';b.title=`${y}: ${ys[y]||0}`;
+  if(yearFilter===y)b.style.background='var(--warn)';b.onclick=()=>{yearFilter=yearFilter===y?null:y;render()};$('tl').appendChild(b)}
+ $('list').innerHTML='';rows.forEach(d=>{const e=document.createElement('div');e.className='item'+(selected===d.id?' sel':'');
+  e.innerHTML=`<b></b><small></small><div></div>`;e.querySelector('b').textContent=d.name;e.querySelector('small').textContent=`${d.start} · ${d.country}`;
+  e.querySelector('div').innerHTML=`<span class="tag">${d.family}</span><span class="tag">${d.status}</span>`+(d.is_cyberattack?'':'<span class="tag nc">not a cyberattack</span>');
+  e.onclick=()=>{selected=d.id;show(d);render()};$('list').appendChild(e)});
+}
+function show(d){
+ const m=$('detail');m.innerHTML='';const h=document.createElement('h2');h.textContent=d.name;m.appendChild(h);
+ const s=document.createElement('div');s.innerHTML=`<span class="tag">${d.id}</span><span class="tag">${d.period}</span><span class="tag">${d.inst_class}</span>`+(d.is_cyberattack?'':'<span class="tag nc">NON-MALICIOUS COMPARATOR</span>');m.appendChild(s);
+ const t=document.createElement('table');
+ for(const[k,l]of Object.entries(LABELS)){const v=d[k];if(v===null||v===undefined||v==='')continue;const tr=t.insertRow();tr.insertCell().textContent=l;tr.insertCell().textContent=String(v)}
+ const tr=t.insertRow();tr.insertCell().textContent='Sources';const c=tr.insertCell();d.sources.forEach(u=>{const a=document.createElement('a');a.href=u;a.textContent=u;a.target='_blank';a.rel='noopener';c.appendChild(a);c.appendChild(document.createElement('br'))});
+ m.appendChild(t);
+ const n=document.createElement('p');n.className='note';n.textContent='Status describes the headline facts. REPORTED = credible secondary reporting without primary confirmation. Figures are as reported and may have been revised later. See evidence_gaps.md.';m.appendChild(n);
+}
+['fRegion','fFamily','fStatus','fState','q'].forEach(id=>$(id).addEventListener('input',render));
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+url,domain,source_type,incidents,http_check_2026_11_07,note
+https://archives.fbi.gov/archives/news/pressrel/press-releases/more-than-100-arrested-in-zeus-banking-trojan-scheme,archives.fbi.gov,Primary (official/court/regulator/company),INC-2010-001,403,bot-blocked from sandbox (not proof of invalid URL)
+https://ccdcoe.org/library/publications/international-cyber-incidents-legal-considerations/,ccdcoe.org,Secondary journalism,INC-2007-001,200,reachable
+https://cloud.google.com/blog/topics/threat-intelligence/unc5537-snowflake-data-theft-extortion,cloud.google.com,Security-vendor research (commercial incentive),INC-2024-002,200,reachable
+https://en.wikipedia.org/wiki/Vladimir_Levin,en.wikipedia.org,Encyclopedic (orientation only),INC-1994-001,200,reachable
+https://home.treasury.gov/news/press-releases/jy0127,home.treasury.gov,Primary (official/court/regulator/company),INC-2020-002,200,reachable
+https://krebsonsecurity.com/?s=FIS+ATM+13+million,krebsonsecurity.com,Secondary journalism,INC-2011-002,200,reachable
+https://newsonair.gov.in/sbi-assures-customers-of-safe-funds-after-suspected-data-breach/,newsonair.gov.in,Primary (official/court/regulator/company),INC-2026-005,200,reachable
+https://newsroom.aboutrobinhood.com/robinhood-announces-data-security-incident-update/,newsroom.aboutrobinhood.com,Secondary journalism,INC-2021-002,200,reachable
+https://sundayguardianlive.com/business/rbi-intensifies-cyber-checks-on-indian-banks-after-data-leaks-and-fraudulent-fund-transfers-314211/,sundayguardianlive.com,Secondary journalism,INC-2026-004,200,reachable
+https://www.americanbanker.com/news/1-2-million-french-bank-accounts-exposed-in-breach,americanbanker.com,Secondary journalism,INC-2026-001,200,reachable
+https://www.americanbanker.com/news/citizens-frost-blame-vendor-after-data-breach-claim,americanbanker.com,Secondary journalism,INC-2026-002,200,reachable
+https://www.bankingdive.com/news/sec-settles-ransomware-case-against-icbc-unit/734476/,bankingdive.com,Secondary journalism,INC-2023-004,200,reachable
+https://www.banxico.org.mx/sistemas-de-pago/,banxico.org.mx,Primary (official/court/regulator/company),INC-2018-001,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.bleepingcomputer.com/news/security/patelco-notifies-726-000-customers-of-ransomware-data-breach/,bleepingcomputer.com,Secondary journalism,INC-2024-005,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.business-standard.com/article/finance/union-bank-of-india-escapes-171-million-cyber-heist-116072101139_1.html,business-standard.com,Secondary journalism,INC-2016-003,200,reachable
+https://www.business-standard.com/industry/banking/cert-in-warns-banks-fintech-firms-of-ai-driven-fund-transfer-fraud-126110500550_1.html,business-standard.com,Secondary journalism,INC-2026-007,200,reachable
+https://www.cftc.gov/PressRoom/PressReleases/8659-23,cftc.gov,Primary (official/court/regulator/company),INC-2023-001,200,reachable
+https://www.cisa.gov/news-events/alerts/2018/10/02/hidden-cobra-fastcash-campaign,cisa.gov,Primary (official/court/regulator/company),INC-2018-003,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a,cisa.gov,Primary (official/court/regulator/company),INC-2023-002,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.commerce.senate.gov/services/files/24d3c229-4f2f-405d-b8db-a3a67f183883,commerce.senate.gov,Secondary journalism,INC-2013-003,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.comparitech.com/news/software-maker-warns-200000-frost-bank-customers-in-texas-of-data-breach/,comparitech.com,Secondary journalism,INC-2026-002,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.crowdstrike.com/wp-content/uploads/2024/08/Channel-File-291-Incident-Root-Cause-Analysis-08.06.2024.pdf,crowdstrike.com,Primary (official/court/regulator/company),INC-2024-006,200,reachable
+https://www.dawn.com/news/2010309,dawn.com,Secondary journalism,INC-2026-003,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.euronews.com/2026/11/04/credit-mutuel-arkea-reports-cyberattack-says-clients-will-be-fully-protected,euronews.com,Secondary journalism,INC-2026-006,200,reachable
+https://www.europol.europa.eu/media-press/newsroom/news/mastermind-behind-eur-1-billion-cyber-bank-robbery-arrested-in-spain,europol.europa.eu,Primary (official/court/regulator/company),INC-2014-001,200,reachable
+https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom,fbi.gov,Primary (official/court/regulator/company),INC-2024-003,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.fbi.gov/news/press-releases/fbi-statement-on-attribution-of-malicious-cyber-activity-posed-by-the-democratic-peoples-republic-of-korea,fbi.gov,Primary (official/court/regulator/company),INC-2022-002,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.fbi.gov/news/stories/2009/november/atm_111609,fbi.gov,Primary (official/court/regulator/company),INC-2008-002,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.fca.org.uk/publication/final-notices/tesco-personal-finance-plc-2018.pdf,fca.org.uk,Primary (official/court/regulator/company),INC-2016-002,200,reachable
+https://www.federalreserve.gov/newsevents/pressreleases/enforcement20240614a.htm,federalreserve.gov,Primary (official/court/regulator/company),INC-2024-004,200,reachable
+https://www.fma.govt.nz/news/all-releases/media-releases/nzx-review/,fma.govt.nz,Primary (official/court/regulator/company),INC-2020-001,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.fsa.go.jp/en/press_releases/issues/202504/02.pdf,fsa.go.jp,Primary (official/court/regulator/company),INC-2025-003,200,reachable
+https://www.helpnetsecurity.com/2026/02/19/ficoba-data-breach-bank-accounts/,helpnetsecurity.com,Secondary journalism,INC-2026-001,200,reachable
+https://www.ic3.gov/PSA/2025/PSA250226,ic3.gov,Primary (official/court/regulator/company),INC-2025-001,200,reachable
+https://www.icbc.com.cn/icbc/en/newsupdates/icbc%20news/IndustrialandCommercialBankofChinaFinancialServicesLLCCompletedtheSettlementofTreasuryTrades.htm,icbc.com.cn,Primary (official/court/regulator/company),INC-2023-004,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.insurancejournal.com/news/international/2026/10/21/889809.htm,insurancejournal.com,Secondary journalism,INC-2026-005,200,reachable
+https://www.iranintl.com/en/202606237516,iranintl.com,Secondary journalism,INC-2026-003,200,reachable
+https://www.justice.gov/opa/pr/alleged-international-hacker-indicted-massive-attack-us-retail-and-banking-networks,justice.gov,Primary (official/court/regulator/company),INC-2008-001,200,reachable
+https://www.justice.gov/opa/pr/chinese-military-personnel-charged-computer-fraud-economic-espionage-and-wire-fraud-hacking,justice.gov,Primary (official/court/regulator/company),INC-2017-001,200,reachable
+https://www.justice.gov/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and,justice.gov,Primary (official/court/regulator/company),INC-2016-001,200,reachable
+https://www.justice.gov/opa/pr/seven-iranians-working-islamic-revolutionary-guard-corps-affiliated-entities-charged,justice.gov,Primary (official/court/regulator/company),INC-2012-001,200,reachable
+https://www.justice.gov/usao-edny/pr/eight-members-new-york-cell-cybercrime-organization-indicted-45-million-cybercrime,justice.gov,Primary (official/court/regulator/company),INC-2013-001,200,reachable
+https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-unsealing-charges-against-three-defendants-hacking,justice.gov,Primary (official/court/regulator/company),INC-2014-002,200,reachable
+https://www.justice.gov/usao-wdwa/pr/former-seattle-tech-worker-convicted-wire-fraud-and-computer-intrusions,justice.gov,Primary (official/court/regulator/company),INC-2019-001,200,reachable
+https://www.koreajoongangdaily.com/business/lotte-card-fined-96-billion-won-for-leaking-users-social-registration-numbers/12524086,koreajoongangdaily.com,Secondary journalism,INC-2025-006,200,reachable
+https://www.koreatimes.co.kr/business/companies/20260731/lotte-card-fined-338-mil-over-massive-data-breach,koreatimes.co.kr,Secondary journalism,INC-2025-006,200,reachable
+https://www.lemondeinformatique.fr/actualites/lire-credit-mutuel-arkea-victime-d-un-piratage-de-118-meteuro-100910.html,lemondeinformatique.fr,Secondary journalism,INC-2026-006,200,reachable
+https://www.ncsc.gov.uk/news/russia-ddos-involvement-in-ukraine,ncsc.gov.uk,Primary (official/court/regulator/company),INC-2022-001,200,reachable
+https://www.ncsc.gov.uk/news/russian-military-almost-certainly-responsible-destructive-2017-cyber-attack,ncsc.gov.uk,Primary (official/court/regulator/company),INC-2017-002,200,reachable
+https://www.nippon.com/en/articles/-/57039,nippon.com,Secondary journalism,INC-2026-008,200,reachable
+https://www.nippon.com/en/in-depth/d01153/,nippon.com,Secondary journalism,INC-2025-003,200,reachable
+https://www.npci.org.in/PDF/npci/press-releases/2024/NPCI-Press-Release-C-Edge-Technologies-Ltd.pdf,npci.org.in,Primary (official/court/regulator/company),INC-2024-007,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.nytimes.com/1995/08/19/business/hacker-s-exploit-in-banking.html,nytimes.com,Secondary journalism,INC-1994-001,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.occ.gov/news-issuances/news-releases/2020/nr-occ-2020-101.html,occ.gov,Primary (official/court/regulator/company),INC-2019-001,200,reachable
+https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-30.html,occ.gov,Primary (official/court/regulator/company),INC-2025-002,200,reachable
+https://www.rbnz.govt.nz/hub/news/2021/01/reserve-bank-response-to-illegal-breach-of-data-system,rbnz.govt.nz,Primary (official/court/regulator/company),INC-2021-001,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.reuters.com/article/us-chile-banks-cyber-idUSKCN1J32XL,reuters.com,Secondary journalism,INC-2018-002,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/article/us-citi-idUSTRE7570RT20110608,reuters.com,Secondary journalism,INC-2011-001,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/article/us-city-union-cyber-idUSKCN1G20NN,reuters.com,Secondary journalism,INC-2018-004,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/article/us-cyber-heist-swift-idUSKCN0Y60EN,reuters.com,Secondary journalism,INC-2015-001,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/article/us-cyber-korea-idUSBRE93905R20130410,reuters.com,Secondary journalism,INC-2013-002,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/article/us-taiwan-cyber-idUSKBN1CC0QO,reuters.com,Secondary journalism,INC-2017-003,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/article/us-vietnam-cybercrime-idUSKCN0YA0CH,reuters.com,Secondary journalism,INC-2015-002,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/legal/government/french-bank-credit-mutuel-arkea-says-100-million-missing-after-cyberattack-2026-11-05/,reuters.com,Secondary journalism,INC-2026-006,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/legal/government/india-cybercrime-agency-warns-financial-firms-ai-attacks-2026-11-04/,reuters.com,Secondary journalism,INC-2026-007,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/technology/cybersecurity/equilend-says-some-systems-hit-by-cyber-incident-2024-01-23/,reuters.com,Secondary journalism,INC-2024-001,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/technology/cybersecurity/pro-israel-hacker-group-claims-hit-irans-bank-sepah-2025-06-17/,reuters.com,Secondary journalism,INC-2025-005,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/technology/cybersecurity/ransomware-attack-forces-shut-down-300-small-indian-banks-sources-say-2024-07-31/,reuters.com,Secondary journalism,INC-2024-007,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.reuters.com/world/india/indian-crypto-exchange-coindcx-says-44-million-stolen-2025-07-19/,reuters.com,Secondary journalism,INC-2025-007,401,reachable but paywalled/bot-blocked (content not read in-session)
+https://www.sec.gov/Archives/edgar/data/1679788/000167978825000094/coin-20250514.htm,sec.gov,Primary (official/court/regulator/company),INC-2025-004,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.sec.gov/Archives/edgar/data/19617/000119312514362173/d799478d8k.htm,sec.gov,Primary (official/court/regulator/company),INC-2014-002,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000933136&type=8-K,sec.gov,Primary (official/court/regulator/company),INC-2023-003,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001331875&type=8-K,sec.gov,Primary (official/court/regulator/company),INC-2023-005,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.sec.gov/news/press-release/2021-102,sec.gov,Primary (official/court/regulator/company),INC-2019-002,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.siasat.com/hyderabad-nbfc-loses-rs-3-3-crore-in-87-minute-cyberattack-3562826/,siasat.com,Secondary journalism,INC-2026-004,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.swift.com/myswift/customer-security-programme-csp,swift.com,Primary (official/court/regulator/company),INC-2016-001,403,bot-blocked from sandbox (not proof of invalid URL)
+https://www.theregister.co.uk/2006/02/27/ftc_settles_with_cardsystems/,theregister.co.uk,Secondary journalism,INC-2005-001,200,reachable
